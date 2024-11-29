@@ -4,116 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIOT CLOTHING</title>
+    <title>RIOT Clothing</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 relative">
 
-     <header class="bg-white text-black py-6 shadow-md">
+
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+        <source src="/assets/videos/RIOT.mp4" type="video/mp4">
+    </video>
+
+
+    <header class="bg-white text-black py-6 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="logo-link">
-                <img src="./assets/img/LOGO.png" alt="Logo" class="w-20">
+            <a href="/index.html" class="logo-link">
+                <img src="/assets/img/LOGO.png" alt="Logo" class="w-20">
             </a>
 
             <nav>
                 <ul class="flex space-x-8 font-semibold text-lg uppercase">
-                    <li><a href="#" class="nav-link interactive" data-target="arcane-modal">Arcane</a></li>
-                    <li><a href="#" class="nav-link interactive" data-target="league-modal">League of Legends</a></li>
-                    <li><a href="#" class="nav-link interactive" data-target="valorant-modal">VALORANT</a></li>
-                    <li><a href="#" class="nav-link interactive" data-target="tft-modal">Teamfight Tactics</a></li>
+                    <li><a href="/pages/page1/page1.html" class="nav-link arcane">Arcane</a></li>
+                    <li><a href="/pages/page2/page2.html" class="nav-link league">League of Legends</a></li>
+                    <li><a href="/pages/page3/page3.html" class="nav-link tft">Valorant</a></li>
+                    <li><a href="/pages/page4/page4.html" class="nav-link valorant">Teamfight Tactics</a></li>
                 </ul>
             </nav>
-
             <div class="flex items-center space-x-6">
-                <a href="#">Shop Now</a>
-                <img src="./assets/img/cart.png" alt="Cart" class="w-8">
+                <a href="#" class="text-lg font-semibold">Shop Now</a>
+                <a href="#" class="relative">
+                    <img src="/assets/img/cart.png" alt="Cart" class="w-8">
+                </a>
             </div>
         </div>
     </header>
 
 
-    <div id="arcane-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2 class="text-2xl font-bold">Arcane</h2>
-            <p>Explore the Arcane collection!</p>
-            <button class="close-modal">Close</button>
-        </div>
-    </div>
+    <section class="container mx-auto py-16">
+        <h2 class="text-center text-4xl font-bold mb-12 uppercase text-white">Clothing Appeals</h2>
 
-    <div id="league-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2 class="text-2xl font-bold">League of Legends</h2>
-            <p>Explore the League of Legends collection!</p>
-            <button class="close-modal">Close</button>
-        </div>
-    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <a href="/pages/page1/page1.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                <img src="/assets/img/product1.png" alt="Product 1" class="w-full">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">ARCANE LEAGUE OF LEGENDS UT Graphic T-Shirt</h3>
+                    <p class="text-gray-600 mb-4">₱1,999</p>
+                    <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+                </div>
+            </a>
 
-    <div id="valorant-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2 class="text-2xl font-bold">VALORANT</h2>
-            <p>Explore the VALORANT collection!</p>
-            <button class="close-modal">Close</button>
-        </div>
-    </div>
+            <a href="/pages/page2/page2.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                <img src="/assets/img/product2.png" alt="Product 2" class="w-full">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">League Hoodie</h3>
+                    <p class="text-gray-600 mb-4">₱1,800</p>
+                    <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+                </div>
+            </a>
 
-    <div id="tft-modal" class="modal hidden">
-        <div class="modal-content">
-            <h2 class="text-2xl font-bold">Teamfight Tactics</h2>
-            <p>Explore the Teamfight Tactics collection!</p>
-            <button class="close-modal">Close</button>
-        </div>
-    </div>
+            <a href="/pages/page3/page3.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                <img src="/assets/img/product3.png" alt="Product 3" class="w-full">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">VALORANT Champions 2024 // Supernova Tee</h3>
+                    <p class="text-gray-600 mb-4">₱2,170</p>
+                    <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+                </div>
+            </a>
 
-    <script src="./assets/js/script.js"></script>
-</body>
-
-    <section class="video-overlay-section relative">
-
-        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
-            <source src="./assets/videos/RIOT.mp4" type="video/mp4">
-        </video>
-
-
-        <div class="overlay-content relative container mx-auto py-16 text-white">
-            <h2 class="text-center text-4xl font-bold mb-12 uppercase">Clothing Appeals</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-
-                <a href="/pages/page1/page1.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                    <img src="./assets/img/b1.png" alt="Product 1" class="w-full">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Arcane</h3>
-                        <span class="btn-add-to-cart">MORE</span>
-                    </div>
-                </a>
-
-                <a href="./pages/page2/page2.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                    <img src="./assets/img/b2.png" alt="Product 2" class="w-full">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">League of Legends</h3>
-                        <span class="btn-add-to-cart">MORE</span>
-                    </div>
-                </a>
-
-                <a href="./pages/page3/page3.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                    <img src="./assets/img/b3.png" alt="Product 3" class="w-full">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">VALORANT</h3>
-                        <span class="btn-add-to-cart">MORE</span>
-                    </div>
-                </a>
-
-                <a href="./pages/page4/page4.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                    <img src="./assets/img/b4.png" alt="Product 4" class="w-full">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Teamfight Tactics</h3>
-                        <span class="btn-add-to-cart">MORE</span>
-                    </div>
-                </a>
-            </div>
+            <a href="/pages/page4/page4.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                <img src="/assets/img/product4.png" alt="Product 4" class="w-full">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2">Teamfight Tactics 5 Year Bash Tee</h3>
+                    <p class="text-gray-600 mb-4">₱1,200</p>
+                    <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+                </div>
+            </a>
         </div>
     </section>
+
+    <footer class="bg-black text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">Copyright © RIOT GAMES., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 

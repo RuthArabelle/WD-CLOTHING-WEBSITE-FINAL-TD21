@@ -81,3 +81,75 @@ header .nav-link:hover::after {
 .modal .close-modal:hover {
     background-color: #2563eb;
 }
+
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.size-btn {
+    background-color: #f3f4f6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.size-btn:hover {
+    background-color: #e5e7eb;
+    transform: scale(1.05);
+}
+
+.size-btn:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.size-btn.selected {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #2563eb;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button.bg-blue-600 {
+    background-color: #3b82f6;
+}
+
+button.bg-blue-600:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .product-info {
+        padding: 10px;
+    }
+
+    .size-btn {
+        padding: 8px 16px;
+    }
+
+    .bg-blue-600 {
+        padding: 12px;
+    }
+}

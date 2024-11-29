@@ -60,11 +60,7 @@ RIOT GAMES CLOTHING MERCH
 4 Games Clothing Appeal in one site of a Game company named RIOT GAMES.
 
 Guiding Question:
-- What is the project
-Web Design Final Project (Clothing Site)
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+-Web Design Final Project (Clothing Site)
 
 ### Key Components
 <!-- TODO: List of Key Components -->
