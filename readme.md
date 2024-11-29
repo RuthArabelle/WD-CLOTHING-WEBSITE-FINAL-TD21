@@ -57,10 +57,11 @@ RIOT GAMES CLOTHING MERCH
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+4 Games Clothing Appeal in one site of a Game company named RIOT GAMES.
 
 Guiding Question:
 - What is the project
+Web Design Final Project (Clothing Site)
 - Whats the purpose
 - What are key components
 - What technology used and how it is used
@@ -115,6 +116,8 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
-|-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+
+| Tailwind|-|
+| Bootstrap |
+| RIOT GAMES|-|
+| UNQLO|-|
