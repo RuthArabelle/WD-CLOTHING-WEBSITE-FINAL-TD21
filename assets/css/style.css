@@ -1,4 +1,4 @@
-
+/* Navigation Styles */
 .nav-link {
     position: relative;
     color: #4a4a4a;
@@ -9,6 +9,7 @@
     padding: 10px 15px;
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 
 .arcane {
@@ -18,7 +19,7 @@
 
 .arcane:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .league {
@@ -28,7 +29,7 @@
 
 .league:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .esports {
@@ -38,7 +39,7 @@
 
 .esports:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .valorant {
@@ -48,10 +49,10 @@
 
 .valorant:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Shop Now Button */
 .btn-shop {
     background-color: #af4c4c;
     color: white;
@@ -60,57 +61,20 @@
     padding: 8px 16px;
     border-radius: 4px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn-shop:hover {
     background-color: #8e3838;
 }
 
-
-.cart-icon {
-    width: 40px;
-    height: 40px;
-}
-
-
-.hero-section {
-    height: calc(100vh - 80px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e7eb;
-    text-align: center;
-}
-
-
-nav {
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-}
-
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-
-nav img {
-    width: 50px;
-    height: auto;
-}
-
+/* Slider Styles */
 .slider {
-    display: flex;
-}
-
-input[type="radio"] {
-    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slides {
@@ -118,43 +82,33 @@ input[type="radio"] {
     transition: transform 0.5s ease;
 }
 
-.slides label {
+.slider-image {
     min-width: 100%;
-}
-
-.slides img {
-    width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover;
 }
 
-.nav-buttons {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.nav-dot {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    margin: 0 5px;
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
     cursor: pointer;
+    z-index: 10;
 }
 
-input[type="radio"]:checked + .slides {
-    transform: translateX(calc(-100% * var(--current-slide)));
+.slider-button.left {
+    left: 10px;
 }
 
-#slide-1:checked ~ .slides {
-    transform: translateX(0);
+.slider-button.right {
+    right: 10px;
 }
 
-#slide-2:checked ~ .slides {
-    transform: translateX(-100%);
-}
-
-#slide-3:checked ~ .slides {
-    transform: translateX(-200%);
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
