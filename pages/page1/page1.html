@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-transparent">
+
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+        <source src="/assets/videos/ArcaneS2.mp4" type="video/mp4">
+    </video>
 
 
     <header class="bg-white text-black py-6 shadow-md">
@@ -19,8 +23,9 @@
     </header>
 
 
-    <section class="container mx-auto py-16 flex justify-center items-center">
+    <section class="container mx-auto py-16 flex justify-center items-center relative z-10">
         <div class="flex flex-col md:flex-row w-full max-w-6xl space-x-10">
+
 
             <div class="w-full md:w-1/2">
                 <img src="/assets/img/product1.png" alt="Product" class="w-full max-w-md mb-8 mx-auto">
@@ -59,13 +64,12 @@
         </div>
     </section>
 
-
-    <footer class="bg-white text-black py-6 mt-16">
+    
+    <footer class="bg-black text-white py-8 mt-12">
         <div class="container mx-auto text-center">
-            <p class="text-gray-600">© 2024 Riot Clothing</p>
+            <p class="mb-4">Copyright © RIOT GAMES., Ltd. All rights reserved.</p>
         </div>
     </footer>
-
 
 </body>
 </html>
