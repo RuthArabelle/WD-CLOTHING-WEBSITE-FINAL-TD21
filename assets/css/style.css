@@ -46,7 +46,7 @@ video {
     background: transparent;
 }
 
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +57,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Modal Styles */
+
 #productModal {
     display: none;
 }
@@ -67,7 +67,7 @@ body {
     margin: 0 auto;
 }
 
-/* Product Card Hover Effect */
+
 .product-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
