@@ -104,3 +104,57 @@ nav img {
     width: 50px;
     height: auto;
 }
+
+.slider {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides label {
+    min-width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .slides {
+    transform: translateX(calc(-100% * var(--current-slide)));
+}
+
+#slide-1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide-2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide-3:checked ~ .slides {
+    transform: translateX(-200%);
+}
