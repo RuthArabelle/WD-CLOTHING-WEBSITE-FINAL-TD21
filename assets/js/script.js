@@ -49,6 +49,43 @@ const productDetails = [
     }
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const modals = document.querySelectorAll(".modal");
+    const closeButtons = document.querySelectorAll(".close-modal");
+
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute("data-target");
+            const modal = document.getElementById(targetId);
+            if (modal) {
+                modal.classList.remove("hidden");
+            }
+        });
+    });
+
+
+    closeButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            modals.forEach(modal => {
+                modal.classList.add("hidden");
+            });
+        });
+    });
+
+
+    modals.forEach(modal => {
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    });
+});
+
+
 function openModal(productIndex) {
     const product = productDetails[productIndex - 1];
     document.getElementById("modalImage").src = product.imgSrc;
@@ -66,7 +103,7 @@ function openModal(productIndex) {
     document.getElementById("productModal").classList.remove("hidden");
 }
 
+
 function closeModal() {
     document.getElementById("productModal").classList.add("hidden");
 }
-
