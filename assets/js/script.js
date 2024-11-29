@@ -4,7 +4,7 @@ const slides = document.querySelectorAll('.slide');
 const btnLeft = document.querySelector('.slider-btn.left');
 const btnRight = document.querySelector('.slider-btn.right');
 
-let currentIndex = 0;
+let currentIndex = 1;
 
 btnLeft.addEventListener('click', () => {
     currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
