@@ -1,36 +1,106 @@
 
 .nav-link {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
+    position: relative;
+    color: #4a4a4a;
     font-weight: bold;
-    color: #555;
-    background-color: #f7f7f7;
     text-transform: uppercase;
-    text-align: center;
-    border-radius: 0.25rem;
-    transition: all 0.3s ease;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #fff;
-    background-color: #007BFF;
+.arcane {
+    background-color: #fff3d1;
+    color: #7b5804;
+}
+
+.arcane:hover {
     transform: scale(1.1);
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.league {
+    background-color: #cceeff;
+    color: #004a80;
+}
+
+.league:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.esports {
+    background-color: #ffd700;
+    color: #a67c00;
+}
+
+.esports:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.valorant {
+    background-color: #ffe6e6;
+    color: #990000;
+}
+
+.valorant:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
-@media (max-width: 768px) {
-    .nav-link {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
-    }
+.btn-shop {
+    background-color: #af4c4c;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-shop:hover {
+    background-color: #8e3838;
+}
+
+
+.cart-icon {
+    width: 40px;
+    height: 40px;
 }
 
 
 .hero-section {
-    background: #ececec;
-    background-size: cover;
-    background-position: center;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav img {
+    width: 50px;
+    height: auto;
 }

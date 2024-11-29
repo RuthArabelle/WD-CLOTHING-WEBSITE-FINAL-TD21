@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hover Navigation Example</title>
 
+
     <script src="https://cdn.tailwindcss.com"></script>
 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-100">
+
 
     <nav class="bg-white shadow-md py-4">
         <div class="container mx-auto flex justify-between items-center">
@@ -22,20 +26,29 @@
                 <img src="./assets/img/LOGO.png" alt="Logo" class="w-20">
             </a>
 
+
             <ul class="flex space-x-6">
                 <li>
-                    <a href="./pages/page1/" class="nav-link">ARCANE</a>
+                    <a href="./pages/page1/" class="nav-link arcane">ARCANE</a>
                 </li>
                 <li>
-                    <a href="./pages/page2/" class="nav-link">LEAGUE OF LEDGENDS </a>
+                    <a href="./pages/page2/" class="nav-link league">LEAGUE OF LEGENDS</a>
                 </li>
                 <li>
-                    <a href="./pages/page3/" class="nav-link">ESPORTS</a>
+                    <a href="./pages/page3/" class="nav-link esports">ESPORTS</a>
                 </li>
                 <li>
-                    <a href="page4.html" class="nav-link">VALORANT</a>
+                    <a href="./pages/page4/" class="nav-link valorant">VALORANT</a>
                 </li>
             </ul>
+
+
+            <div class="flex items-center space-x-4">
+                <a href="./shop.html" class="btn-shop">Shop Now</a>
+                <a href="./cart.html">
+                    <img src="./assets/img/cart.png" alt="Cart" class="w-8 h-8">
+                </a>
+            </div>
         </div>
     </nav>
 
