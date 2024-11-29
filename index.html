@@ -14,11 +14,10 @@
 
     <header class="bg-white text-black py-6 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-
-            <a href="index.html">
+            <a href="index.html" class="logo-link">
                 <img src="./assets/img/LOGO.png" alt="Logo" class="w-20">
             </a>
-
+            
             <nav>
                 <ul class="flex space-x-8 font-semibold text-lg uppercase">
                     <li><a href="./pages/page1/" class="nav-link arcane">Arcane</a></li>
@@ -27,15 +26,27 @@
                     <li><a href="./pages/page4/" class="nav-link valorant">Valorant</a></li>
                 </ul>
             </nav>
-
             <div class="flex items-center space-x-6">
-                <a href="./shop.html" class="btn-shop">Shop Now</a>
-                <a href="./cart.html">
+                <a href=>Shop Now</a>
+
                     <img src="./assets/img/cart.png" alt="Cart" class="w-8">
                 </a>
             </div>
         </div>
     </header>
+
+
+    <section class="mx-auto py-12 relative">
+        <div class="video-container relative">
+            <video autoplay loop muted class="w-full rounded-lg shadow-lg">
+                <source src="./assets/videos/ArcaneS2.mp4" type="video/mp4">
+
+            </video>
+
+            <a href="https://www.youtube.com/watch?v=ysqiEC6bLUI" target="_blank" class="hidden-link"></a>
+        </div>
+    </section>
+
 
     <section class="container mx-auto py-16">
         <h2 class="text-center text-4xl font-bold mb-12 uppercase">Featured Products</h2>
@@ -44,7 +55,7 @@
                 <img src="./assets/img/product1.png" alt="Product 1" class="w-full">
                 <div class="p-6">
                     <h3 class="font-bold text-xl mb-2">Arcane T-Shirt</h3>
-                    <p class="text-gray-600 mb-4">₱4,850</p>
+                    <p class="text-gray-600 mb-4">₱750</p>
                     <a href="#" class="btn-add-to-cart">Add to Cart</a>
                 </div>
             </div>
