@@ -1,66 +1,50 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIOT CLOTHING</title>
-</head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riot Clothing</title>
+    <title>Hover Navigation Example</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
 
-        .custom-text {
-            font-family: 'Cursive', sans-serif;
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-100">
 
-    <nav class="bg-white py-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div>
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center">
+
+            <a href="index.html">
                 <img src="./assets/img/LOGO.png" alt="Logo" class="w-20">
-            <div class="hidden md:flex space-x-6 text-gray-700">
-                <a href="#" class="hover:text-black font-medium">APPAREAL</a>
-                <a href="#" class="hover:text-black font-medium">Men</a>
-                <a href="#" class="hover:text-black font-medium">Kids</a>
-                <a href="#" class="hover:text-black font-medium">Baby</a>
-            </div>
-            <div class="flex space-x-4">
-                <i class="bi bi-globe text-lg"></i>
-                <i class="bi bi-heart text-lg"></i>
-                <i class="bi bi-cart text-lg"></i>
-            </div>
+            </a>
+
+            <ul class="flex space-x-6">
+                <li>
+                    <a href="./pages/page1/assets/" class="nav-link">ARCANE</a>
+                </li>
+                <li>
+                    <a href="./pages/page2/" class="nav-link">LEAGUE OF LEDGENDS </a>
+                </li>
+                <li>
+                    <a href="./pages/page3/" class="nav-link">ESPORTS</a>
+                </li>
+                <li>
+                    <a href="page4.html" class="nav-link">VALORANT</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
 
-    <section class="relative h-screen bg-cover bg-center" style="background-image: url('#');">
-        <!-- Replace # with background image URL -->
-        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center">
-            <div class="container mx-auto px-4 text-white">
-                <h1 class="text-5xl font-light mb-4">Comfortable, relaxed silhouette<br> that can be worn on any occasion</h1>
-                <div class="mt-6">
-                    <h2 class="text-lg">Gift for Her:</h2>
-                    <p class="custom-text">Light Souffle Yarn V Neck Short Cardigan</p>
-                    <p class="text-lg font-bold mt-2">₱1490</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <header class="hero-section relative bg-gray-200 h-screen flex items-center justify-center">
+        <h1 class="text-4xl font-bold text-gray-800">Welcome to the Hover Navigation Example</h1>
+    </header>
 
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
