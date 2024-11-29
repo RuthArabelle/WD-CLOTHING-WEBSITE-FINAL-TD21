@@ -1,68 +1,53 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
 }
 
-
+/* Navigation Links */
 .nav-link {
-    color: white;
+    color: black;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    padding: 10px;
+    transition: transform 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+    display: inline-block; /* Ensures proper spacing */
 }
 
 .nav-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Smooth scaling on hover */
+    text-decoration: underline; /* Adds underline on hover */
+    transform-origin: center; /* Scaling from the center */
 }
 
+/* Custom Colors for Links */
+.arcane { color: #7b5804; }
+.league { color: #004a80; }
+.tft { color: #007a4a; }
+.valorant { color: #990000; }
 
-.arcane { color: #fff3d1; }
-.league { color: #cceeff; }
-.esports { color: #ffd700; }
-.valorant { color: #ffe6e6; }
-
-
-.slider-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-}
-
-.slide {
-    min-width: 100%;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Slider Controls */
-.slider-btn {
-    background-color: rgba(0, 0, 0, 0.5);
+/* Shop Button */
+.btn-shop {
+    background-color: #000;
     color: white;
-    border: none;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-.slider-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.btn-shop:hover {
+    background-color: #444;
 }
 
-
+/* Product Card */
 .product-card {
     border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
 }
 
 .btn-add-to-cart {
@@ -79,4 +64,9 @@ body {
 
 .btn-add-to-cart:hover {
     background-color: #444;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
