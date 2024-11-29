@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIOT CLOTHING</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-100">
 
+    <!-- Header -->
     <header class="bg-white text-black py-6 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="logo-link">
@@ -26,66 +26,60 @@
                     <li><a href="./pages/page4/page4.html" class="nav-link valorant">Teamfight Tactics</a></li>
                 </ul>
             </nav>
-            <div class="flex items-center space-x-6">
-                <a href=>Shop Now</a>
 
-                    <img src="./assets/img/cart.png" alt="Cart" class="w-8">
-                </a>
+            <div class="flex items-center space-x-6">
+                <a href="#">Shop Now</a>
+                <img src="./assets/img/cart.png" alt="Cart" class="w-8">
             </div>
         </div>
     </header>
 
+    <!-- Video Section with Overlay -->
+    <section class="video-overlay-section relative">
+        <!-- Video Background -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted>
+            <source src="./assets/videos/RIOT.mp4" type="video/mp4">
+        </video>
 
-    <section class="mx-auto py-12 relative">
-        <div class="video-container relative">
-            <video autoplay loop muted class="w-full rounded-lg shadow-lg">
-                <source src="./assets/videos/RIOT.mp4" type="video/mp4">
+        <!-- Overlay Content -->
+        <div class="overlay-content relative container mx-auto py-16 text-white">
+            <h2 class="text-center text-4xl font-bold mb-12 uppercase">Clothing Appeals</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Product Cards -->
+                <a href="/pages/page1/page1.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                    <img src="./assets/img/b1.png" alt="Product 1" class="w-full">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Arcane</h3>
+                        <span class="btn-add-to-cart">MORE</span>
+                    </div>
+                </a>
 
-            </video>
+                <a href="./pages/page2/page2.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                    <img src="./assets/img/b2.png" alt="Product 2" class="w-full">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">League of Legends</h3>
+                        <span class="btn-add-to-cart">MORE</span>
+                    </div>
+                </a>
 
-            <a href="https://www.youtube.com/watch?v=ysqiEC6bLUI" target="_blank" class="hidden-link"></a>
+                <a href="./pages/page3/page3.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                    <img src="./assets/img/b3.png" alt="Product 3" class="w-full">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">VALORANT</h3>
+                        <span class="btn-add-to-cart">MORE</span>
+                    </div>
+                </a>
+
+                <a href="./pages/page4/page4.html" class="product-card bg-white bg-opacity-80 text-black shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+                    <img src="./assets/img/b4.png" alt="Product 4" class="w-full">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Teamfight Tactics</h3>
+                        <span class="btn-add-to-cart">MORE</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
-
-
-    <section class="container mx-auto py-16">
-        <h2 class="text-center text-4xl font-bold mb-12 uppercase">clothing appeals</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-
-            <a href="/pages/page1/page1.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                <img src="./assets/img/b1.png" alt="Product 1" class="w-full">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Arcane</h3>
-                    <span class="btn-add-to-cart">MORE</span>
-                </div>
-            </a>
-
-            <a href="./pages/page2/page2.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                <img src="./assets/img/b2.png" alt="Product 2" class="w-full">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">League of Legends</h3>
-                    <span class="btn-add-to-cart">MORE</span>
-                </div>
-            </a>
-
-            <a href="./pages/page3/page3.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                <img src="./assets/img/b3.png" alt="Product 3" class="w-full">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">VALORANT</h3>
-                    <span class="btn-add-to-cart">MORE</span>
-                </div>
-            </a>
-
-            <a href="./pages/page4/page4.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
-                <img src="./assets/img/b4.png" alt="Product 4" class="w-full">
-                <div class="p-6">
-                    <h3 class="font-bold text-xl mb-2">Teamfight Tactics</h3>
-                    <span class="btn-add-to-cart">MORE</span>
-                </div>
-            </a>
-        </div>
-    </section>
-    
 
 </body>
 
