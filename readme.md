@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/zyx-0314/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="/assets/img/LOGO.png" alt="LOGO" width="130" height="100">
+    <img src="/assets/img/LOGO.png" alt="LOGO" width="AUTO" height="AUTO">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">RIOT APPEALS</h3>
@@ -20,7 +20,7 @@ RIOT GAMES CLOTHING MERCH
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=RuthArabelle/WD-CLOTHING-WEBSITE-FINAL-TD21)
 
 ---
 
