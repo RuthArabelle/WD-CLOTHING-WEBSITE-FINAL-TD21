@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -5,27 +6,16 @@ body {
     background-color: #f3f4f6;
 }
 
-
-.arcane:hover {
-    color: #f6a53b;
-    transform: translateY(-3px);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.league:hover {
-    color: #1e40af;
-    transform: translateY(-3px);
+/* Navigation Links */
+.nav-link {
+    position: relative;
 }
-
-.valorant:hover {
-    color: #e11d48; 
-    transform: translateY(-3px);
-}
-
-.tft:hover {
-    color: #fbbf24; 
-    transform: translateY(-3px);
-}
-
 
 .nav-link::after {
     content: "";
@@ -42,25 +32,103 @@ body {
     width: 100%;
 }
 
-
+/* Hover Colors */
+.arcane:hover {
+    color: #f6a53b;
+    transform: translateY(-3px);
+}
 .arcane:hover::after {
     background-color: #f6a53b;
 }
 
+.league:hover {
+    color: #1e40af;
+    transform: translateY(-3px);
+}
 .league:hover::after {
     background-color: #1e40af;
 }
 
+.valorant:hover {
+    color: #e11d48;
+    transform: translateY(-3px);
+}
 .valorant:hover::after {
     background-color: #e11d48;
 }
 
+.tft:hover {
+    color: #fbbf24;
+    transform: translateY(-3px);
+}
 .tft:hover::after {
     background-color: #fbbf24;
 }
 
+/* Section Styles */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.clothingappeals {
+    text-align: center; /* Centers the text horizontally */
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 auto; /* Center the element within its container */
+    margin-bottom: 20px; /* Add spacing between the text and the product grid */
+}
 
 
+/* Product Card */
+.product-card {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.product-card .p-6 {
+    padding: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #6b7280;
+}
+
+.product-card .btn-add-to-cart {
+    font-weight: bold;
+    color: #3b82f6;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn-add-to-cart:hover {
+    color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Modal Styles */
 .modal {
     position: fixed;
     top: 0;
@@ -101,22 +169,7 @@ body {
     background-color: #2563eb;
 }
 
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-.product-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-
+/* Button Styles */
 .size-btn {
     background-color: #f3f4f6;
     padding: 10px 20px;
@@ -143,9 +196,8 @@ section {
     border-color: #2563eb;
 }
 
-
 button {
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button.bg-blue-600 {
@@ -157,7 +209,15 @@ button.bg-blue-600:hover {
     transform: scale(1.05);
 }
 
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
 
+/* Responsive Styles */
 @media (max-width: 768px) {
     .product-info {
         padding: 10px;
@@ -170,62 +230,4 @@ button.bg-blue-600:hover {
     .bg-blue-600 {
         padding: 12px;
     }
-}
-
-.clothingappeals {
-    text-align: center;
-    color: white;
-    font-size: 2.25rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    padding-right: 150px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.product-card {
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-}
-
-.product-card .p-6 {
-    padding: 1.5rem;
-}
-
-.product-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.product-card p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.product-card .btn-add-to-cart {
-    font-weight: bold;
-    color: #3b82f6;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.product-card .btn-add-to-cart:hover {
-    color: #2563eb;
-    transform: scale(1.05);
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 2rem;
 }
