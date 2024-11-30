@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+        <source src="/assets/videos/LOL.mp4" type="video/mp4">
+    </video>
+
+    <header class="bg-white text-black py-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/index.html" class="logo-link">
+                <img src="/assets/img/LOGO.png" alt="Logo" class="w-20">
+            </a>
+        </div>
+    </header>
+
+
+    <section class="container mx-auto py-16 flex justify-center items-center">
+        <div class="flex flex-col md:flex-row w-full max-w-6xl space-x-10">
+
+            <div class="w-full md:w-1/2">
+                <img src="./assets/img/product2.png" alt="Product" class="w-full max-w-md mb-8 mx-auto">
+            </div>
+
+
+            <div class="bg-white p-8 rounded-lg shadow-lg w-full md:w-1/2">
+                <div class="flex flex-col items-start">
+                    <h2 class="text-2xl font-semibold mb-4">League of Leagends Hoodie</h2>
+                    <p class="text-gray-600 mb-4">₱1,800.00</p>
+
+
+                    <div class="mb-6">
+                        <p class="text-lg font-medium mb-2">Size:</p>
+                        <div class="flex space-x-4">
+                            <button class="size-btn" data-size="Small">Small</button>
+                            <button class="size-btn" data-size="Medium">Medium</button>
+                            <button class="size-btn" data-size="Large">Large</button>
+                            <button class="size-btn" data-size="Extra-Large">Extra-Large</button>
+                            <button class="size-btn" data-size="2X-Large">2X-Large</button>
+                        </div>
+                    </div>
+
+
+                    <div class="mb-6">
+                        <label for="quantity" class="block text-lg font-medium mb-2">Quantity:</label>
+                        <input type="number" id="quantity" value="1" min="1" class="w-16 text-center p-2 border rounded-md">
+                    </div>
+
+
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold w-full">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-black text-white py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <p class="mb-4">Copyright © RIOT GAMES., Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
