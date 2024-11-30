@@ -13,7 +13,45 @@ body {
     padding: 0 1rem;
 }
 
-
+.navbar {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    position: absolute;
+}
+.navbar a {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 50px;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+li {
+    font-size: 20
+    px;
+    margin-left: 50px;
+}
+.arcane :hover {
+    color: pink;
+}
+.lol :hover{
+    color: blue;
+}
+.valorant :hover{
+    color: red;
+}
+.tot :hover{
+    color: orange;
+}
 .clothingappeals h2 {
     font-size: 2.5rem;
     font-weight: bold;
