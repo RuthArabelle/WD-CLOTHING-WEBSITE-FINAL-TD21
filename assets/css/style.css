@@ -36,8 +36,8 @@ ul {
     list-style: none;
 }
 li {
-    font-size: 20
-    px;
+    font-size: 20;
+    list-style-type: none;
     margin-left: 50px;
 }
 .arcane :hover {
