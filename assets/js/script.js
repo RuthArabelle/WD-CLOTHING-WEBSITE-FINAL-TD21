@@ -55,31 +55,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeButtons = document.querySelectorAll(".close-modal");
 
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link, index) => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
-            const targetId = link.getAttribute("data-target");
-            const modal = document.getElementById(targetId);
-            if (modal) {
-                modal.classList.remove("hidden");
-            }
+            openModal(index + 1);
         });
     });
 
 
     closeButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            modals.forEach(modal => {
-                modal.classList.add("hidden");
-            });
-        });
+        button.addEventListener("click", closeModal);
     });
 
 
     modals.forEach(modal => {
         modal.addEventListener("click", (e) => {
             if (e.target === modal) {
-                modal.classList.add("hidden");
+                closeModal();
             }
         });
     });
@@ -97,7 +89,6 @@ function openModal(productIndex) {
         <p class="text-gray-600 mb-4">${product.description}</p>
         <p class="font-semibold">Size: Small</p>
         <p class="font-semibold">Quantity: 1</p>
-
         <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 mt-4">Add to Cart</button>
     `;
     document.getElementById("productModal").classList.remove("hidden");
