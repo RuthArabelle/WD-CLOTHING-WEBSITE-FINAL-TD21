@@ -33,6 +33,7 @@ body {
     font-weight: 700;
     color: inherit;
     margin-left: 50px;
+    color: #000;
 }
 
 ul {
@@ -47,38 +48,18 @@ li {
     margin-left: 50px;
 }
 
-.arcane {
+.arcane :hover {
     color: pink;
 }
-
-.arcane:hover {
-    color: white;
-}
-
-.lol {
+.lol :hover{
     color: blue;
 }
-
-.lol:hover {
-    color: white;
-}
-
-.valorant {
+.valorant :hover{
     color: red;
 }
-
-.valorant:hover {
-    color: white;
-}
-
-.tot {
+.tot :hover{
     color: orange;
 }
-
-.tot:hover {
-    color: white;
-}
-
 
 .clothingappeals h2 {
     font-size: 2.5rem;
