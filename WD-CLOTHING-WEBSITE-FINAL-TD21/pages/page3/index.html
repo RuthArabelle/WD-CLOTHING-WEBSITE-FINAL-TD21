@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIOT Clothing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg-gray-100 relative">
+
+    <base href="/WD-CLOTHING-WEBSITE-FINAL-TD21/">
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+        <source src="./assets/videos/RIOT.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header -->
+    <header class="bg-white text-black py-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="./index.html" class="logo-link">
+                <img src="./assets/img/LOGO.png" alt="Logo" class="w-20">
+            </a>
+            <nav>
+                <li><a href="./pages/page1/" class="nav-link arcane">Arcane</a></li>
+                <li><a href="./pages/page2" class="nav-link league">League of Legends</a></li>
+                <li><a href="./pages/page3/" class="nav-link tft">Valorant</a></li>
+                <li><a href="./pages/page4/" class="nav-link valorant">Teamfight Tactics</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-6">
+            <a href="#" class="text-lg font-semibold">Shop Now</a>
+            <a href="#" class="relative">
+                <img src="./assets/img/cart.png" alt="Cart" class="w-8">
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Clothing Appeals Section -->
+<section class="container mx-auto py-16">
+    <div class="clothingappeals">
+        <h2 class="text-white text-4xl font-bold uppercase mb-8">Clothing Appeals</h2>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <a href="./pages/page1/page1.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+            <img src="./assets/img/product1.png" alt="Product 1" class="w-full">
+            <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">ARCANE LEAGUE OF LEGENDS UT Graphic T-Shirt</h3>
+                <p class="text-gray-600 mb-4">₱1,999</p>
+                <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+            </div>
+        </a>
+
+        <a href="./pages/page2/page2.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+            <img src="./assets/img/product2.png" alt="Product 2" class="w-full">
+            <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">League Hoodie</h3>
+                <p class="text-gray-600 mb-4">₱1,800</p>
+                <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+            </div>
+        </a>
+
+        <a href="./pages/page3/page3.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+            <img src="./assets/img/product3.png" alt="Product 3" class="w-full">
+            <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">VALORANT Champions 2024 // Supernova Tee</h3>
+                <p class="text-gray-600 mb-4">₱2,170</p>
+                <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+            </div>
+        </a>
+
+        <a href="./pages/page4/page4.html" class="product-card bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform">
+            <img src="./assets/img/product4.png" alt="Product 4" class="w-full">
+            <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">Teamfight Tactics 5 Year Bash Tee</h3>
+                <p class="text-gray-600 mb-4">₱1,200</p>
+                <span class="btn-add-to-cart text-blue-600 font-semibold hover:underline">ADD TO CART</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-white py-8 mt-12">
+    <div class="container mx-auto text-center">
+        <p class="mb-4">Copyright © RIOT GAMES., Ltd. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="./assets/js/script.js"></script>
+<script>
+    window.onload = function() {
+        alert('Welcome to RIOT Clothing!');
+    };
+</script>
+
+</body>
+
+</html>
+
