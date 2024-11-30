@@ -23,6 +23,7 @@ body {
     padding-bottom: 25px;
     width: 100%;
     position: absolute;
+    z-index: 100;
 }
 .navbar a {
     color: rgb(50, 50, 50);
