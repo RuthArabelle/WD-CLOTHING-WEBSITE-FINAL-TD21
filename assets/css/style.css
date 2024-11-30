@@ -16,24 +16,19 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    place-items: center;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    position: absolute;
 }
-
 .navbar a {
     text-decoration: none;
     font-weight: 700;
-    color: inherit;
+    color: black;
     margin-left: 50px;
-    color: #000;
 }
 
 ul {
