@@ -18,9 +18,8 @@ body {
     justify-content: center;
     place-items: center;
     box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     width: 100%;
     position: absolute;
 }
