@@ -25,7 +25,6 @@ header .nav-link:hover {
     transform: translateY(-3px);
 }
 
-
 header .nav-link::after {
     content: "";
     position: absolute;
@@ -83,15 +82,11 @@ header .nav-link:hover::after {
 }
 
 
-body {
-    font-family: 'Arial', sans-serif;
-}
-
-
 section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 }
 
 .product-info {
@@ -100,6 +95,7 @@ section {
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 
 .size-btn {
     background-color: #f3f4f6;
@@ -127,6 +123,7 @@ section {
     border-color: #2563eb;
 }
 
+
 button {
     transition: background-color 0.3s ease;
 }
@@ -139,6 +136,7 @@ button.bg-blue-600:hover {
     background-color: #2563eb;
     transform: scale(1.05);
 }
+
 
 @media (max-width: 768px) {
     .product-info {
