@@ -16,13 +16,17 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    place-items: center;
-    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding-top: 45px;
     padding-bottom: 45px;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
 .navbar a {
     text-decoration: none;
     font-weight: 700;
