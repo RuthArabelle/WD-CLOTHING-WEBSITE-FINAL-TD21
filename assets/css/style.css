@@ -1,4 +1,4 @@
-
+/* General Reset */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,85 +6,48 @@ body {
     background-color: #f3f4f6;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-
-.nav-link {
-    position: relative;
+/* Title Styling */
+.clothingappeals h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
 }
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background-color: currentColor;
-    transition: width 0.3s ease-in-out;
+/* Product Grid */
+.grid {
+    display: grid;
+    gap: 2rem;
 }
 
-.nav-link:hover::after {
-    width: 100%;
-}
-
-
-.arcane:hover {
-    color: #f6a53b;
-    transform: translateY(-3px);
-}
-.arcane:hover::after {
-    background-color: #f6a53b;
-}
-
-.league:hover {
-    color: #1e40af;
-    transform: translateY(-3px);
-}
-.league:hover::after {
-    background-color: #1e40af;
-}
-
-.valorant:hover {
-    color: #e11d48;
-    transform: translateY(-3px);
-}
-.valorant:hover::after {
-    background-color: #e11d48;
-}
-
-.tft:hover {
-    color: #fbbf24;
-    transform: translateY(-3px);
-}
-.tft:hover::after {
-    background-color: #fbbf24;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-}
-
-
+/* Product Card */
 .product-card {
-    display: block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
+    background-color: white;
     border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
     width: 100%;
     height: auto;
-    border-radius: 1rem 1rem 0 0;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .product-card .p-6 {
@@ -94,19 +57,21 @@ section {
 .product-card h3 {
     font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
 .product-card p {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
-    color: #6b7280;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
 .product-card .btn-add-to-cart {
+    display: inline-block;
     font-weight: bold;
     color: #3b82f6;
-    cursor: pointer;
+    text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -115,87 +80,7 @@ section {
     transform: scale(1.05);
 }
 
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.modal.hidden {
-    display: none;
-}
-
-.modal-content {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.modal .close-modal {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.modal .close-modal:hover {
-    background-color: #2563eb;
-}
-
-
-.size-btn {
-    background-color: #f3f4f6;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1px solid #d1d5db;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.size-btn:hover {
-    background-color: #e5e7eb;
-    transform: scale(1.05);
-}
-
-.size-btn:focus {
-    outline: none;
-    border-color: #3b82f6;
-}
-
-.size-btn.selected {
-    background-color: #3b82f6;
-    color: white;
-    border-color: #2563eb;
-}
-
-button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button.bg-blue-600 {
-    background-color: #3b82f6;
-}
-
-button.bg-blue-600:hover {
-    background-color: #2563eb;
-    transform: scale(1.05);
-}
-
+/* Footer */
 footer {
     background-color: #000;
     color: #fff;
@@ -203,17 +88,25 @@ footer {
     text-align: center;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .product-info {
-        padding: 10px;
+    .clothingappeals h2 {
+        font-size: 1.75rem;
     }
 
-    .size-btn {
-        padding: 8px 16px;
+    .grid {
+        grid-template-columns: 1fr;
     }
+}
 
-    .bg-blue-600 {
-        padding: 12px;
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

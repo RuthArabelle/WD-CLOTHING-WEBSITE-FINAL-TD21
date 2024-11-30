@@ -1,0 +1,132 @@
+
+body {
+    background-color: #f3f4f6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: white;
+    color: black;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-link img {
+    width: 5rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header nav a {
+    font-size: 1rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #3b82f6;
+}
+
+.clothingappeals {
+    text-align: center;
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-right: 150px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.clothingappeals h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Product Cards */
+.product-card {
+    display: block;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.product-card .p-6 {
+    padding: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+}
+
+.product-card .btn-add-to-cart {
+    font-weight: bold;
+    color: #3b82f6;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.product-card .btn-add-to-cart:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Utility Classes for Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
