@@ -1,7 +1,7 @@
 const productDetails = [
     {
         title: "Arcane T-Shirt",
-        price: "₱750",
+        price: "₱1,999",
         description: "A comfortable and stylish Arcane T-Shirt for fans.",
         imgSrc: "./assets/img/product1.png"
     },
@@ -25,7 +25,7 @@ const productDetails = [
     },
     {
         title: "Arcane T-Shirt (Variant)",
-        price: "₱750",
+        price: "₱1,999",
         description: "A comfortable and stylish Arcane T-Shirt for fans.",
         imgSrc: "./assets/img/product1.png"
     },
