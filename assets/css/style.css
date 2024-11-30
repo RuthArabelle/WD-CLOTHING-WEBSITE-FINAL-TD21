@@ -30,42 +30,55 @@ body {
 .navbar a {
     text-decoration: none;
     font-weight: 700;
+    color: inherit;
     margin-left: 50px;
-    align-items: center;
 }
+
 ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 li {
-    font-size: 20;
-    list-style-type: none;
+    font-size: 20px;
     margin-left: 50px;
 }
+
 .arcane {
     color: pink;
 }
-.arcane :hover {
-    color: white
+
+.arcane:hover {
+    color: white;
 }
+
 .lol {
     color: blue;
 }
-.lol :hover{
+
+.lol:hover {
     color: white;
 }
+
 .valorant {
     color: red;
 }
-.valorant :hover{
-    color:white;
+
+.valorant:hover {
+    color: white;
 }
+
 .tot {
     color: orange;
 }
-.tot :hover{
+
+.tot:hover {
     color: white;
 }
+
+
 .clothingappeals h2 {
     font-size: 2.5rem;
     font-weight: bold;
