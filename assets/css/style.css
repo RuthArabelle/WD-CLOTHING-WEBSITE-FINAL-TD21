@@ -1,18 +1,8 @@
-
-body {
-    font-family: 'Arial', sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f3f4f6;
+    font-family: sans-serif;
 }
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 ;
-    padding: 0 1rem;
-}
-
 .navbar {
     display: flex;
     justify-content: center;
