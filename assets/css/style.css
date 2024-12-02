@@ -115,7 +115,7 @@ li {
     transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
     background-color: #000;
     color: #fff;
@@ -123,7 +123,7 @@ footer {
     text-align: center;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .clothingappeals h2 {
         font-size: 1.75rem;
