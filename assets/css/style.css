@@ -1,20 +1,148 @@
-appeals h2 {
-    font-size: 1.75rem;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: absolute;
+}
+.navbar a {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 50px;
+    align-items: center;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.arcane :hover {
+    color: pink;
+}
+.lol :hover{
+    color: blue;
+}
+.valorant :hover{
+    color: red;
+}
+.tot :hover{
+    color: orange;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    top: 55px;
+    z-index: -1;
+}
+.clothingappeals {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
 .grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    gap: 2rem;
 }
 
+
+.product-card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.product-card .p-6 {
+    padding: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.product-card .btn-add-to-cart {
+    display: inline-block;
+    font-weight: bold;
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn-add-to-cart:hover {
+    color: #2563eb;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .clothingappeals h2 {
+        font-size: 1.75rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media (min-width: 768px) {
-.grid {
-    grid-template-columns: repeat(2, 1fr);
-}
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 1024px) {
-.grid {
-    grid-template-columns: repeat(4, 1fr);
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
-}
+
