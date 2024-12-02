@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/RuthArabelle">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="/assets/img/LOGO.png" alt="LOGO" width="AUTO" height="AUTO">
   </a>
