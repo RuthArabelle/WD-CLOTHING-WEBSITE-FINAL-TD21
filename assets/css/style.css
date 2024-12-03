@@ -14,7 +14,8 @@
     padding-bottom: 15px;
     width: 100%;
     background-color: white;
-    position: absolute;
+    position: relative;
+    z-index: 10;
 }
 
 .navbar a {
@@ -38,7 +39,6 @@ li {
     margin-left: 50px;
 }
 
-/* Hover colors for navigation */
 .arcane:hover {
     color: pink;
 }
@@ -61,6 +61,8 @@ li {
     left: 0;
     bottom: 10px;
     top: 55px;
+    z-index: 0;
+    object-fit: cover;
 }
 
 .clothingappeals {
@@ -70,14 +72,13 @@ li {
     font-size: 25px;
 }
 
-/* Adjust grid for products */
 .grid {
     display: grid;
     gap: 2rem;
     position: relative;
 }
 
-/* Product Card Styling */
+
 .product-card {
     background-color: white;
     border-radius: 1rem;
@@ -89,8 +90,8 @@ li {
 }
 
 .product-card:hover {
-    transform: scale(1.05);  /* Smooth scaling */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);  /* Smooth shadow effect */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
@@ -126,10 +127,9 @@ li {
 
 .product-card .btn-add-to-cart:hover {
     color: #2563eb;
-    transform: scale(1.05); /* Smooth scale effect */
+    transform: scale(1.05);
 }
 
-/* Footer Styling */
 footer {
     background-color: #000;
     color: #fff;
@@ -137,7 +137,7 @@ footer {
     text-align: center;
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 768px) {
     .clothingappeals h2 {
         font-size: 1.75rem;
