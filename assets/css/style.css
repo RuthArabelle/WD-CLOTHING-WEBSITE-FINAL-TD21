@@ -125,6 +125,7 @@ li {
 
 
 .product-card {
+    margin-top: 100px;
     background-color: white;
     border-radius: 1rem;
     overflow: hidden;
