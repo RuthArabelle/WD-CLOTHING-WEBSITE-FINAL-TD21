@@ -7,11 +7,6 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    background-color: red;
-    position: relative;
-    z-index: 0;
-}
 
 .navbar {
     display: flex;
