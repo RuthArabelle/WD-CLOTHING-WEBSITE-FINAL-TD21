@@ -112,8 +112,9 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-
-| Tailwind|-|https://getbootstrap.com/docs/5.3/getting-started/introduction/
-| Bootstrap |https://tailwindcss.com/docs/installation/play-cdn
-| RIOT GAMES|https://merch.riotgames.com/en-us/| https://www.riotgames.com/en
-| UNQLO|https://www.uniqlo.com/us/en/spl/ut/arcane?srsltid=AfmBOoq-CAQF6PpvnLxl1lr6UWMB343uHDHKT2npCzENX-9M7dMFOuqV|
+|Title|Link|
+|-|-|
+|Tailwind|https://getbootstrap.com/docs/5.3/getting-started/introduction/|
+|Bootstrap|https://tailwindcss.com/docs/installation/play-cdn|
+|RIOT GAMES|https://merch.riotgames.com/en-us/| https://www.riotgames.com/en|
+|UNQLO|https://www.uniqlo.com/us/en/spl/ut/arcane?srsltid=AfmBOoq-CAQF6PpvnLxl1lr6UWMB343uHDHKT2npCzENX-9M7dMFOuqV|
