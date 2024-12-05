@@ -54,6 +54,9 @@ li {
 .tot:hover {
     color: orange;
 }
+.body {
+    background-color: red;
+}
 
 .aboutt h2 {
     font-size: 1.8em;
@@ -96,16 +99,6 @@ li {
 
 .search-container button:hover {
     background-color: #4a6c83;
-}
-
-.back-video {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 10px;
-    top: 55px;
-    z-index: 0;
-    object-fit: cover;
 }
 
 .clothingappeals {
