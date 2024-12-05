@@ -65,14 +65,13 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px; /* Increased margin-top for more space */
 }
 
 .aboutt h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
     z-index: 100;
-    font-family: sans-serif;
 }
 
 .aboutt h3 {
@@ -80,16 +79,14 @@ li {
     margin-bottom: 20px;
     color: #555;
     z-index: 100;
-    font-family: sans-serif;
 }
 
 .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 100px; /* Increased margin-top for more space */
     z-index: 100;
-    margin-top: 30px;
 }
 
 .search-container input {
@@ -116,6 +113,69 @@ li {
     background-color: #4a6c83;
 }
 
+.clothingappeals {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    position: relative;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: block;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.product-card .p-6 {
+    padding: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.product-card .btn-add-to-cart {
+    display: inline-block;
+    font-weight: bold;
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn-add-to-cart:hover {
+    color: #2563eb;
+    transform: scale(1.05);
+}
 .clothingappeals {
     color: black;
     text-align: center;
