@@ -148,12 +148,14 @@ li {
     color: #2563eb;
     transform: scale(1.05);
 }
+
 .clothingappeals {
-    color: black;
+    color: grey;
     text-align: center;
     margin-top: 50px;
     font-size: 25px;
 }
+
 
 .grid {
     display: grid;
