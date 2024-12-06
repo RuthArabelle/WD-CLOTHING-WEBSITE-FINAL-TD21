@@ -108,45 +108,34 @@
         </div>
     </section>
 
-    <section class="contact-us py-16 bg-gray-900 text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
-            <form action="#" method="POST" class="max-w-xl mx-auto bg-gray-800 p-6 rounded-lg">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-3 bg-gray-700 text-white rounded-lg">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium mb-2">Email Address*</label>
-                    <input type="email" id="email" name="email" required class="w-full p-3 bg-gray-700 text-white rounded-lg">
-                </div>
-                <div class="mb-4">
-                    <label for="order" class="block text-sm font-medium mb-2">Order Number</label>
-                    <input type="text" id="order" name="order" class="w-full p-3 bg-gray-700 text-white rounded-lg">
-                </div>
-                <div class="mb-4">
-                    <label for="country" class="block text-sm font-medium mb-2">Country</label>
-                    <input type="text" id="country" name="country" class="w-full p-3 bg-gray-700 text-white rounded-lg">
-                </div>
-                <div class="mb-4">
-                    <label for="tracking" class="block text-sm font-medium mb-2">Tracking Number</label>
-                    <input type="text" id="tracking" name="tracking" class="w-full p-3 bg-gray-700 text-white rounded-lg">
-                </div>
-                <div class="mb-4">
-                    <label for="subject" class="block text-sm font-medium mb-2">Subject*</label>
-                    <input type="text" id="subject" name="subject" required class="w-full p-3 bg-gray-700 text-white rounded-lg">
-                </div>
-                <div class="mb-6">
-                    <label for="message" class="block text-sm font-medium mb-2">How can we help?*</label>
-                    <textarea id="message" name="message" required class="w-full p-3 bg-gray-700 text-white rounded-lg h-32"></textarea>
-                </div>
-                <button type="submit" class="w-full py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition">
-                    SEND
-                </button>
-            </form>
-        </div>
-    </section>
-    
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email Address*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="order-number" placeholder="Order Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="country" placeholder="Country">
+            </div>
+            <div class="form-group">
+                <input type="text" name="tracking-number" placeholder="Tracking Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject*" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="How can we help?*" required></textarea>
+            </div>
+            <button type="submit">SEND</button>
+        </form>
+    </section>    
+
     <footer class="bg-black text-white py-8 mt-12">
         <div class="container mx-auto text-center">
             <p class="mb-4">Copyright © RIOT GAMES., Ltd. All rights reserved.</p>
