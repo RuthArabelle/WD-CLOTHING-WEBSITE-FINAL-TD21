@@ -212,81 +212,68 @@ li {
     transform: scale(1.05);
 }
 
-
 .contact-us {
-    padding: 4rem 1rem;
-    background-color: #000;
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 600px;
     color: white;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact-us h2 {
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     font-weight: bold;
-    color: white;
 }
 
 .contact-us form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: transparent;
-    padding: 2rem 0;
+    display: grid;
+    gap: 15px;
 }
 
-.contact-us form input,
-.contact-us form textarea {
+.contact-us .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us input, 
+.contact-us textarea {
     width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    border: none;
-    background-color: #1a1a1a;
-    color: white;
-    border-radius: 4px;
+    padding: 10px;
     font-size: 1rem;
+    color: white;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
 }
 
-.contact-us form input::placeholder,
-.contact-us form textarea::placeholder {
+.contact-us input::placeholder, 
+.contact-us textarea::placeholder {
     color: #888;
 }
 
-.contact-us form textarea {
-    resize: none;
-    height: 120px;
-}
-
-.contact-us form button {
-    display: block;
+.contact-us button {
     width: 100%;
-    padding: 0.75rem;
-    background-color: #fff;
-    color: black;
-    font-size: 1.1rem;
+    padding: 10px;
+    font-size: 1rem;
     font-weight: bold;
+    color: black;
+    background-color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.contact-us form button:hover {
-    background-color: #e5e5e5;
-}
-
-.contact-us form label {
-    display: none;
-}
-
-
-.contact-us form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-
-.contact-us form,
-.contact-us h2 {
-    text-align: left;
+.contact-us button:hover {
+    background-color: #555;
+    color: white;
+    transform: scale(1.02);
 }
 
 
